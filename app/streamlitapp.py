@@ -35,7 +35,7 @@ def image_to_base64(img: Image.Image) -> str:
     return base64.b64encode(buffered.getvalue()).decode()
 
 # ---- DISPLAY LOGO ----
-image = Image.open('SheldonLogo.png')
+image = Image.open('app/SheldonLogo.png')
 encoded_image = image_to_base64(image)
 st.markdown(
     f"""
@@ -65,7 +65,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-options = os.listdir(os.path.join('..', 'data', 's1'))  # Generating a list of options or videos
+options = os.listdir(os.path.join('data', 's1'))  # Generating a list of options or videos
 selected_video = st.selectbox('', options, index=0, format_func=lambda x: f"🎬 {x}")  # Add prefix for clarity and style
 st.text('')
 st.text('')
@@ -76,7 +76,7 @@ col1, col2 = st.columns(2)
 if options:
     with col1:
         st.markdown("<h6 style='text-align: center; color: #000000;'>Selected Video</h6>", unsafe_allow_html=True)
-        file_path = os.path.join('..', 'data', 's1', selected_video)
+        file_path = os.path.join('data', 's1', selected_video)
         os.system(f'ffmpeg -i {file_path} -vcodec libx264 test_video.mp4 -y')  
 
         # Rendering Video

@@ -39,15 +39,16 @@ def load_model() -> Sequential:
 
     # Add two bidirectional LSTM layers, each followed by a dropout layer to prevent overfitting
     model.add(Bidirectional(LSTM(128, kernel_initializer='Orthogonal', return_sequences=True)))
-    model.add(Dropout(0.5))
+    model.add(Dropout(0.5, name="dropout_1"))
 
     model.add(Bidirectional(LSTM(128, kernel_initializer='Orthogonal', return_sequences=True)))
-    model.add(Dropout(0.5))
+    model.add(Dropout(0.5, name="dropout_2"))
+
 
     # Add a dense layer with 41 units (possible classes) with softmax activation for classification
     model.add(Dense(41, kernel_initializer='he_normal', activation='softmax'))
 
     # Load the pre-trained weights from a checkpoint
-    model.load_weights(os.path.join('..', 'models', 'checkpoint'))
+    model.load_weights(os.path.join('models', 'checkpoint'))
 
     return model

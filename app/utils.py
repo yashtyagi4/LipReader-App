@@ -85,8 +85,8 @@ def load_data(path: str):
     file_name = path.split('/')[-1].split('.')[0] # for Mac
     
     # Construct paths for video and alignment files
-    video_path = os.path.join('..','data','s1',f'{file_name}.mpg')
-    alignment_path = os.path.join('..','data','alignments','s1',f'{file_name}.align')
+    video_path = os.path.join('data','s1',f'{file_name}.mpg')
+    alignment_path = os.path.join('data','alignments','s1',f'{file_name}.align')
     
     # Load the video frames and alignments
     frames = load_video(video_path) 
