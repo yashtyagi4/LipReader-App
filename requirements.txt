@@ -1,4 +1,4 @@
-tensorflow<2.8.1
+tensorflow<2.13.0
 opencv-python-headless<4.5.5.62
 streamlit<1.12.1
 Pillow<8.4.1
