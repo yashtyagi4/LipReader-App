@@ -4,3 +4,4 @@ streamlit<1.12.1
 Pillow<8.4.1
 imageio<2.10.5
 ffmpeg<5.0.4
+numpy==1.21.1
