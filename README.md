@@ -1,4 +1,3 @@
-# Sheldon - The Lip Reader
 ![Screenshot 2023-09-03 at 1 19 59 AM](https://github.com/yashtyagi4/LipReader-App/assets/85970478/76f5f58a-421e-4ed7-adfc-0cb30448083b)
 
 <br>
