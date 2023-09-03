@@ -1,5 +1,6 @@
 ![Screenshot 2023-09-03 at 1 19 59 AM](https://github.com/yashtyagi4/LipReader-App/assets/85970478/76f5f58a-421e-4ed7-adfc-0cb30448083b)
 
+
 <br>
 
 Sheldon is an advanced deep-learning **model capable of deciphering lip movements from silent videos** of individuals speaking. This solution is built using a sophisticated end-to-end Keras model leveraging spatiotemporal C3D (3D Convolutional Neural Network) for video preprocessing and incorporating Bi-directional LSTM with CTC output handling to precisely decode speech from muted videos.
