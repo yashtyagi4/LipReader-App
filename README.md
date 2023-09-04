@@ -68,12 +68,6 @@ Sheldon has a range of dependencies essential for its operation. Here's a breakd
 
 4.  Run the Streamlit app:
 
-	**`streamlit run app.py`** 
+	**`streamlit run app/streamlitapp.py`** 
 
 Once you run the above command, Streamlit should open a new tab in your default web browser with the application.
-
-<br>
-
-## License
-
-This project is under the MIT license. For more information, please refer to the `LICENSE` file in the repository.
